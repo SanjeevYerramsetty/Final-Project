@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/slider_main.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+var login = "";
+function WindowLoading(){
+	
+	if(window.location.search.substr(1) === 'id=14'){
+		login = '?id=14';
+	}
+	else{
+		window.location.href = "about.html";
+	}
+	}
+	function addAuth(event){
+		event.preventDefault();
+			var target =event.srcElement;
+
+			location.replace(target.getAttribute('href')+login);
+		
+		}
+</script>	
+<body onload="WindowLoading()">
+	<header>
+		<div class="w3-container w3-tangerine2">
+			<a href="index.html"> <img src="logo.png" width="250"
+				height="90"></a>
+			<div align="center">
+				<p class="heading">Food & Facts</p>
+			</div>
+		</div>
+		<br /> <br /> <br /> <br />
+		<div class="w3-container w3-tangerine">
+			<ul  class="list">
+				<li><a onclick="addAuth(event)" href="index.html">Home</a></li>
+				<li><a onclick="addAuth(event)" href="gallery.html">Gallery</a></li>
+				<li><a onclick="addAuth(event)" href="menu.html">Menu</a></li>
+				<li><a onclick="addAuth(event)" href="contact.html">Contact</a></li>
+				
+			</ul>
+		</div>
+		<!-- <div class="opace"> -->
+		<div class="transbox">
+			<div class="w3-container w3-tangerine1" align="center">
+				<div style="margin-left: 0%; padding: 1px 16px; height: 1000px;">
+					<div class="linespace">
+						<h1>Welcome to Food and Facts</h1>
+						<p>Food and Facts is a perfect Website to Know about the
+							best Indian Food Receipe  and its Nutrition facts, established as one of the most popular
+							entrant into the string which serves South-East food.Authentic Arabian and Indian cuisines made
+							with passion and attention to detail treat your taste buds well.
+
+							We shows information about  a variety of delicious cuisines ranging from North
+							Indian, Chinese, Seafood, and Arabian, which are of great taste
+							and quality. The various ingredients that they use are fresh and
+							instantly give a soul-satisfying taste to the diners. The casual
+							decor of the restaurant is vibrant and beautiful. The
+							pocket-friendly menu has been designed with utmost care to make
+							sure that the flavor and spirit of the cuisines come in every
+							dish they serve and it encompasses Barbeque dishes as well. We
+							are extremely proud of our Indian cuisine and it's undoubtedly
+							the must try our Indian recipes.</p>
+
+					</div>
+
+					<div class="fling-minislide" style="height: 350px; width: 1000px";/>
+
+						<figure>
+							<img src="image1.jpg" alt="Slide 1" />
+							<img src="index5.jpg" alt="Slide 3" />
+							<img src="index2.jpg" alt="Slide 4" />
+							<img src="slide4.jpg" alt="Slide5"/>
+						</figure>
+
+					</div>
+				</div>
+			</div>
+			
+			</header>
+			
+</body>
+
+<div class="footer">
+	<div align="left">
+		<a href="#" class="fa fa-facebook"></a> <a href="#"
+			class="fa fa-twitter"></a> <a href="#" class="fa fa-google"></a>
+
+		<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.1112845235043!2d-73.58043518447799!3d45.50783837910157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a378e4dd4db%3A0xc908db80f452fdb8!2s640+Prince+Arthur+St+W%2C+Montreal%2C+QC+H2X+1T9!5e0!3m2!1sen!2sca!4v1550592991650"
+				width="300" height="120" align="right" frameborder="0"
+				style="border: 10" allowfullscreen></iframe>
+			<p class="address" align="left">
+				VISIT US AT: <br> 640 Rue Prince Arthur Ouest, McGill, <br>
+				Montreal, Canada-H2L 1L3
+			</p>
+	</div>
+
+</div>
+</body>
+</html>

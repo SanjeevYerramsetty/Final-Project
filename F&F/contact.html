@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+var login = "";
+function WindowLoading(){
+	
+	if(window.location.search.substr(1) === 'id=14'){
+		login = '?id=14';
+	}
+	else{
+		window.location.href = "about.html";
+	}
+	}
+	function addAuth(event){
+		event.preventDefault();
+			var target =event.srcElement;
+
+			location.replace(target.getAttribute('href')+login);
+		
+		}
+</script>
+<body  onload="WindowLoading()">
+	<header>
+		<div class="w3-container w3-tangerine2">
+			<a href="index.html"> <img src="logo.png" width="250"
+				height="90"></a>
+			<div align="center">
+				<p class="heading">Food & Facts</p>
+			</div>
+		</div>
+		<br /> <br /> <br /> <br />
+		<div class="w3-container w3-tangerine">
+				<ul>
+			<li><a onclick="addAuth(event)" href="index.html">Home</a></li>
+				<li><a onclick="addAuth(event)" href="gallery.html">Gallery</a></li>
+				<li><a onclick="addAuth(event)" href="menu.html">Menu</a></li>
+				<li><a onclick="addAuth(event)" href="contact.html">Contact</a></li>
+				
+			</ul>
+		</div>
+		<!-- <div class="opace"> -->
+		<div class="transbox1">
+			<div class="w3-container w3-tangerine4" align="center">
+				<div style="margin-left: 0%; padding: 10px 16px; height: 1000px;">
+					<h1>Contact Us</h1>
+					<div class="form">
+						<div class="row">
+							<div class="column">
+
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.1112845235043!2d-73.58043518447799!3d45.50783837910157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a378e4dd4db%3A0xc908db80f452fdb8!2s640+Prince+Arthur+St+W%2C+Montreal%2C+QC+H2X+1T9!5e0!3m2!1sen!2sca!4v1550592991650"
+									width="600" height="700" align="right" frameborder="0"
+									style="padding: 15px; border: 3px solid black; border-radius: 50px 20px; border: 10"
+									allowfullscreen></iframe>
+							</div>
+							<div class="w3-container w3-tangerine2">
+								<div class="column">
+									<form action="/action_page.php">
+										<div class="linespace">
+											<label for="lname"><b>Please Rate the food:</b></label> <input
+												type="radio" id="fname" name="firstname">Excellent<input
+												type="radio" id="fname" name="firstname"> Average <input
+												type="radio" id="fname" name="firstname"> Better<br>
+
+											<label for="lname"> <b> Do you Recommend Us to
+													your: </b>
+											</label><input type="checkbox" name="opinion" value="Family">
+											Family <input type="checkbox" name="opinion" value="Friends">
+											Friends <input type="checkbox" name="opinion"
+												value="Colleagues"> Colleagues<br> <label
+												for="country"> <b> Do you prefer to visit our
+													Website again? </b>
+											</label> <select id="country" name="country">
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+										</div>
+
+										</select> <label for="lname"><b>Name:</b></label> <input type="text"
+											id="fname" name="firstname" placeholder="Your name..">
+										<label for="lname"><b>Date of Birth </b></label> <input
+											type="text" id="lname" name="lastname"
+											placeholder="Your last name.."><label for="lname"><b>Email:</b></label>
+										<input type="text" id="fname" name="firstname"
+											placeholder="Your Email..."> <label for="subject"><b>Suggestions</b></label>
+										<textarea id="subject" name="subject"
+											placeholder="Any Suggestions..." style="height: 108px"></textarea>
+										<input type="submit" value="Submit">
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
+	</header>
+	<div class="footer">
+		<div align="left">
+			<a href="#" class="fa fa-facebook"></a> <a href="#"
+				class="fa fa-twitter"></a> <a href="#" class="fa fa-google"></a>
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.1112845235043!2d-73.58043518447799!3d45.50783837910157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a378e4dd4db%3A0xc908db80f452fdb8!2s640+Prince+Arthur+St+W%2C+Montreal%2C+QC+H2X+1T9!5e0!3m2!1sen!2sca!4v1550592991650"
+				width="300" height="120" align="right" frameborder="0"
+				style="border: 10" allowfullscreen></iframe>
+			<p class="address" align="left">
+				VISIT US AT: <br>640 Rue Prince Arthur Ouest, McGill, <br>
+				Montreal, Canada-H2X 1T9
+			</p>
+		</div>
+
+	</div>
+</body>
+</html>

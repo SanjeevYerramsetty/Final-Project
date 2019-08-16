@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	var login = '';
+		function doLogin(){
+			var loginId=document.getElementById('loginId').value; 
+			var password=document.getElementById('userpassword').value;
+			if(loginId === 'admin' && password === 'admin'){
+				login = '?id=14';
+				location.replace("index.html"+login);
+			}
+			else{
+				alert("Please enter a valid userId and password.");
+				
+			}
+		}
+		function addAuth(event){
+			event.preventDefault();
+			var target =event.srcElement;
+
+			location.replace(target.getAttribute('href')+login);
+		
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="w3-container w3-tangerine2">
+			<a href="index.html"><img src="logo.png" width="250" height="90"></a>
+			<div align="center">
+				<p class="heading">Food & facts</p>
+			</div>
+		</div>
+		<br /> <br /> <br /> <br />
+		<div class="w3-container w3-tangerine">
+			<ul id="list"  class="list">
+				<li><a  onclick="addAuth(event)" href="index.html">Home</a></li>
+				<li><a  onclick="addAuth(event)" href="gallery.html">Gallery</a></li>
+				<li><a  onclick="addAuth(event)" href="menu.html">Menu</a></li>
+				<li><a  onclick="addAuth(event)" href="contact.html">Contact</a></li>
+				<li><a  onclick="addAuth(event)" href="about.html">Login</a></li>
+			</ul>
+		</div>
+		<!-- <div class="opace"> -->
+		<div class="transbox">
+			<div class="w3-container w3-tangerine1" align="center">
+				<div style="margin-left: 0%; padding: 1px 16px; height: 1000px;">
+
+					<h1>A glance of special dishes from our main branch</h1>
+
+					<span style='color:black' >Login Id </span> : <input style='width:30%' type ="text" name = "loginID" id = "loginId">
+					<div><span style='color:black'>Password</span > : <input style='width:30%' type="password" class="pass" name = "userpassword" id='userpassword'></div>
+					<br><input type='button' value='Login' onclick='doLogin()'>
+
+					<p>
+						Our Team is eagerly waiting to show you all in Montreal.Please
+						Visit in and know the receipes & Taste of the touch Indian Spices.<br> Thank you
+						Team Food and Facts
+					</p>
+
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
+	</header>
+	<div class="footer">
+		<div align="left">
+			<a href="#" class="fa fa-facebook"></a> <a href="#"
+				class="fa fa-twitter"></a> <a href="#" class="fa fa-google"></a>
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.1112845235043!2d-73.58043518447799!3d45.50783837910157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a378e4dd4db%3A0xc908db80f452fdb8!2s640+Prince+Arthur+St+W%2C+Montreal%2C+QC+H2X+1T9!5e0!3m2!1sen!2sca!4v1550592991650"
+				width="300" height="120" align="right" frameborder="0"
+				style="border: 10" allowfullscreen></iframe>
+			<p class="address" align="left">
+				VISIT US AT: <br>640 Rue Prince Arthur Ouest, McGill, <br>
+				Montreal, Canada-H2X 1T9
+			</p>
+		</div>
+
+	</div>
+</body>
+</html>

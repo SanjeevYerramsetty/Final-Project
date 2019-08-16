@@ -1,0 +1,35 @@
+﻿.container3 {
+  position: relative;
+  width: 50%;
+  right: 100px;
+}
+
+.heading {
+    font-family: "Tangerine", serif;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    padding: 0x 200px 0px 300px;
+    margin: -75px 300px -40px 250px;
+}
+
+
+ .fling-minislide {
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}   
+
+    .fling-minislide img {
+        position: absolute;
+                opacity: 0;
+        width: 200%;
+        margin:100px;
+                height: auto;
+
+    }
+
+ul.square {
+    background-color: white;
+}
